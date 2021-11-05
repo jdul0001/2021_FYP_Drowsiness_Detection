@@ -17,7 +17,7 @@ detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 set_number = ['001', '002', '005', '006', '008', '009', '012', '013', '015', '020', '023', '024', '031', '032', '033', '034', '035', '036']
 subject_type = ['glasses', 'night_noglasses', 'nightglasses', 'noglasses', 'sunglasses']
 behaviour_type = ['nonsleepyCombination', 'sleepyCombination', 'slowBlinkWithNodding', 'yawning']
-annotation_type = ['drowsiness']
+annotation_type = ['drowsiness'] # Only extract drowsiness annotations for evaluating accuracy with count_face.py
 extract_folder = 'NTHU_Training_Dataset/'
 save_folder = 'NTHU_Training_Haar/'
 
